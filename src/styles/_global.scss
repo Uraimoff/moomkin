@@ -1,0 +1,16 @@
+$white: #fff;
+$red: #f55;
+$darkRed: #f83939;
+$blue: #2678bd;
+$black: #000;
+$grey: #ddd;
+
+
+.globalContainer{
+    max-width: 1280px;
+    margin: auto;
+    @media (max-width: 1280px){
+        padding: 0 20px;
+    }
+
+}

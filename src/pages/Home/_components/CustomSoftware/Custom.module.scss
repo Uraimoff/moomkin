@@ -1,0 +1,31 @@
+.customSoft {
+  @media (max-width: 767px) {
+    padding-top: 100px;
+  }
+}
+.customWraper {
+  display: flex;
+  padding: 50px 0;
+  .title {
+    width: 50%;
+    font-size: 19px;
+    font-weight: 200;
+    padding: 70px 15px 15px 20px;
+    @media (max-width: 991px) {
+      width: 100%;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  .swiper {
+    width: 45%;
+    padding-left: 30px;
+    @media (max-width: 991px) {
+      display: none;
+    }
+    img {
+      width: 100%;
+      height: 400px;
+    }
+  }
+}

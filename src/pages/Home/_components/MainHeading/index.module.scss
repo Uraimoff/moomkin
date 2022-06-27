@@ -1,0 +1,64 @@
+@import "../../../../styles/global";
+.mainHeading {
+  background-image: url(../../../../assets/icons/main-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 700px;
+  width: 100%;
+  background-size: 2300px;
+  @media (max-width: 767px) {
+    background-image: none;
+    background-color: #015587;
+    height: 850px;
+  }
+  @media (max-width: 471px) {
+    height: 900px;
+  }
+  .titles {
+    padding-top: 200px;
+    h1 {
+      font-size: 44px;
+      font-weight: 700;
+      color: $white;
+      @media (max-width: 991px) {
+        font-size: 35px;
+      }
+    }
+    p {
+      padding-top: 15px;
+      font-size: 18px;
+      font-weight: 200;
+      color: $white;
+    }
+    .button {
+      padding: 15px 32px;
+      background-color: $red;
+      color: $white;
+      border: none;
+      transition-duration: 300ms;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 80px;
+      border-radius: 5px;
+      &:hover {
+        background-color: $darkRed;
+      }
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  .resTitles {
+    display: none;
+    text-align: center;
+    p {
+      color: #fff;
+      padding: 20px 0;
+    }
+    @media (max-width: 767px) {
+      display: block;
+      padding-top: 100px;
+    }
+  }
+}

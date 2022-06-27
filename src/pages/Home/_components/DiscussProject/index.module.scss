@@ -1,0 +1,51 @@
+@import "../../../../styles/global";
+.container {
+  background-color: #ecf0f4;
+  .wrapper {
+    padding: 200px 0 100px 0;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    .titles {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .inputs {
+      display: flex;
+      gap: 20px;
+    }
+    input {
+      padding: 15px 20px;
+      font-size: 16px;
+      outline: none;
+      border: none;
+    }
+    .button {
+      background-color: $red;
+      color: $white;
+      border-radius: 5px;
+      transition-duration: 400ms;
+      font-weight: 700;
+      font-size: 14px;
+      &:hover {
+        background-color: $darkRed;
+        cursor: pointer;
+      }
+    }
+    .check {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding-top: 30px;
+      p {
+        font-size: 16px;
+        b {
+          color: $blue;
+        }
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    display: none;
+  }
+}

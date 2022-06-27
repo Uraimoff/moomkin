@@ -1,0 +1,16 @@
+.container {
+  margin-top: 100px;
+  padding-bottom: 50px;
+  .cards {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 20px;
+    @media (max-width: 991px) {
+      grid-template-columns: 50% 50%;
+    }
+    @media (max-width: 601px) {
+      grid-template-columns: auto;
+    }
+  }
+}

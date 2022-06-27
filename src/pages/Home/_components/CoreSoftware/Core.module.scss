@@ -1,0 +1,19 @@
+.coreContainer {
+  margin-top: 200px;
+  @media (max-width: 767px) {
+    margin-top: 50px;
+  }
+  .coreSoftware {
+    display: flex;
+    gap: 20px;
+    padding-top: 80px;
+    @media (max-width: 991px) {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    @media (max-width: 767px) {
+    grid-template-columns: auto;
+    }
+    
+  }
+}

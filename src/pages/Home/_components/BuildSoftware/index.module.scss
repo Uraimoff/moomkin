@@ -1,0 +1,20 @@
+.buildWrapper {
+  margin-top: 200px;
+  .title {
+    text-align: center;
+    padding: 20px 150px;
+    font-size: 18px;
+    font-weight: 400;
+    @media (max-width: 767px) {
+      padding: 20px;
+    }
+  }
+  .cards {
+    display: flex;
+    padding-top: 50px;
+    @media (max-width: 991px) {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+  }
+}

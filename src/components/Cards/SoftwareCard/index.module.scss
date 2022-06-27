@@ -1,0 +1,51 @@
+@import "../../../styles/global";
+.cardWrapper {
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  &:hover img {
+    filter: none;
+  }
+  img {
+    filter: grayscale(1) brightness(250%);
+    transition-duration: 0.3s;
+    transition-property: filter;
+    width: 80px;
+    height: 80px;
+  }
+  h4 {
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: $blue;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+.cardContainer {
+  padding: 30px;
+  text-align: center;
+  img {
+    width: 80px;
+    height: 80px;
+  }
+  h4 {
+    padding: 20px 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: $black;
+    @media (max-width: 767px) {
+      font-size: 18px;
+    }
+  }
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(61, 60, 60, 0.816);
+    @media (max-width: 767px) {
+     font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../../../styles/global";
+.container{
+    background-color: $red;
+    text-align: center;
+    transition-duration: 400ms;
+    cursor: pointer;
+    &:hover{
+        background-color: $darkRed;
+    }
+    h4{
+        color: $white;
+        padding: 20px 0;
+        font-size: 28px;
+    }
+}

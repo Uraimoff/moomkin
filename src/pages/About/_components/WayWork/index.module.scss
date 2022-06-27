@@ -1,0 +1,21 @@
+.container {
+  background-color: #ecf0f4;
+  margin-top: 100px;
+  .wrapper {
+    padding-top: 100px;
+    .works {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 33% 33% 33%;
+      row-gap: 100px;
+      column-gap: 50px;
+      padding: 50px;
+      @media (max-width: 991px) {
+        grid-template-columns: 50% 50%;
+      }
+      @media (max-width: 767px) {
+        grid-template-columns: auto;
+      }
+    }
+  }
+}
