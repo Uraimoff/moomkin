@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import { Dropdown } from "antd";
+import { data } from "./helpers";
 import logo from "../../assets/images/Moomkin.png";
 import logo2 from "../../assets/images/Moomkin2.png";
 import menuWhite from "../../assets/images/menu.png";
@@ -38,13 +39,20 @@ const Header = () => {
             <img src={change === "white" ? logo : logo2} alt="logo" />
           </Link>
         </div>
-        <ul>
-          <li><a href="/#services">SERVICES</a></li>
-          <li><a href="/#expertise">EXPERTISE</a></li>
-          <li><a href="/#numbers">NUMBERS</a></li>
-          <Link to={"/about"}><li>ABOUT US</li></Link>
-          <li><a href="/#services">INSIGHTS</a></li>
-        </ul>
+
+        {data.map((item) => (
+          <ul style={{ marginTop: "15px" }}>
+            <Dropdown overlay={item.menu} placement="bottom">
+              <ul>
+                <Link to={item.link}>
+                  <li>{item.title}</li>
+                </Link>
+                <i>{item.icon}</i>
+              </ul>
+            </Dropdown>
+          </ul>
+        ))}
+
         <div className={styles.buttons}>
           <button className={styles.contact}>CONTACT</button>
           <img
@@ -69,11 +77,21 @@ const Header = () => {
             </div>
           </div>
           <ul className={styles.resTitles}>
-            <li><a href="/#services">SERVICES</a></li>
-            <li><a href="/#expertise">EXPERTISE</a></li>
-            <li><a href="/#numbers">NUMBERS</a></li>
-            <Link to={"/about"}><li onClick={() => setOpen(false)}>ABOUT US</li></Link>
-            <li><a href="/#services">INSIGHTS</a></li>
+            <li>
+              <a href="/#services">SERVICES</a>
+            </li>
+            <li>
+              <a href="/#expertise">EXPERTISE</a>
+            </li>
+            <li>
+              <a href="/#numbers">NUMBERS</a>
+            </li>
+            <Link to={"/about"}>
+              <li onClick={() => setOpen(false)}>ABOUT US</li>
+            </Link>
+            <li>
+              <a href="/#services">INSIGHTS</a>
+            </li>
           </ul>
         </div>
       </div>
