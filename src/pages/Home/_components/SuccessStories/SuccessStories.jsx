@@ -1,18 +1,15 @@
 import React from "react";
 
 import Title from "../../../../components/Title/Title";
-import WorkersCard from "../../../../components/Cards/WorkersCard/WorkersCard";
 
 import img from "../../../../assets/images/img5.jpg";
 import img2 from "../../../../assets/images/img3.jpg";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Scrollbar, A11y } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
+
 
 import styles from "./index.module.scss";
 import "../../../../styles/_global.scss";
+import BigSwiper from "../../../../components/Swipers/BigSwiper/BigSwiper";
 
 const SuccessStories = () => {
   const obj = [
@@ -36,29 +33,7 @@ const SuccessStories = () => {
     <section className={styles.container}>
       <div className={`${styles.swiper} globalContainer`}>
         <Title title={"Success Stories To Inspire"} />
-        <Swiper
-          style={{
-            "--swiper-navigation-color": "gray",
-          }}
-          modules={[Navigation, Scrollbar, A11y]}
-          spaceBetween={10}
-          slidesPerView={1}
-          loop={true}
-          navigation
-          scrollbar={{ draggable: true }}
-        >
-          {obj.map((item) => (
-            <SwiperSlide>
-              <WorkersCard
-                img={item.img}
-                name={item.name}
-                position={item.position}
-                job={item.job}
-                title={item.title}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <BigSwiper obj={obj}/>
       </div>
     </section>
   );
