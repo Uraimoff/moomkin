@@ -54,7 +54,7 @@ const Header = () => {
         ))}
 
         <div className={styles.buttons}>
-          <button className={styles.contact}>Ibrohim</button>
+          <button className={styles.contact}>CONTACT</button>
           <img
             src={change === "white" ? menuWhite : menuBlack}
             alt="menu"
