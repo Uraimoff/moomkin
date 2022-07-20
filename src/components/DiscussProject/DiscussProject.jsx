@@ -1,6 +1,5 @@
 import React from "react";
-import styles from "./index.module.scss";
-import "../../../../styles/_global.scss";
+import styles from "./index.module.scss"
 const DiscussProject = () => {
   return (
     <section className={styles.container}>

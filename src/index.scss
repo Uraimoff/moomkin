@@ -1,10 +1,20 @@
-@import 'antd/dist/antd.css';
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
-    scroll-behavior: smooth;
-    list-style: none;
-    text-decoration: none;
+@import "antd/dist/antd.css";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+.globalContainer {
+  max-width: 1280px;
+  margin: auto;
+  @media (max-width: 1280px) {
+    padding: 0 20px;
+  }
+}
+p,h4{
+    margin-bottom: 0 !important;
 }
