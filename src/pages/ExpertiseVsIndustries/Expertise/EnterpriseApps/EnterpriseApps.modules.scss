@@ -1,0 +1,16 @@
+.container{
+    background-image: url(./../../../../assets/images/backgroundImg/EnterpriseApps.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 700px;
+    width: 100%;
+    background-size: 2300px;
+    @media (max-width: 767px) {
+        background-image: none;
+        background-color: #3F1D48;
+        height: 850px;
+    }
+    @media (max-width: 471px) {
+        height: 900px;
+    }
+}

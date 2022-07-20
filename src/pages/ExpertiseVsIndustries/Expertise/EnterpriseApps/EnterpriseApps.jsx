@@ -3,7 +3,9 @@ import styles from './EnterpriseApps.modules.scss';
 
 const EnterpriseApps = () => {
   return (
-    <div>EnterpriseApps</div>
+    <>
+    <div className={styles.container}>IMG</div>
+    </>
   )
 }
 
