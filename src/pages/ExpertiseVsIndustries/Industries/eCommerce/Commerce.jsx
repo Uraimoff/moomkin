@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Commerce.modules.scss';
+import styles from './Commerce.module.scss';
 
 const Commerce = () => {
   return (

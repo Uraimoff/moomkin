@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './AddTechLearning.modules.scss';
+import styles from './AddTechLearning.module.scss';
 
 const AddTechLearning = () => {
   return (

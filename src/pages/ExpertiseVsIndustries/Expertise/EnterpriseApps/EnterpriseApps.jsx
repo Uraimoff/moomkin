@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './EnterpriseApps.modules.scss';
+import styles from './EnterpriseApps.module.scss';
 
 const EnterpriseApps = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './CaseStudio.modules.scss';
+import styles from './CaseStudio.module.scss';
 
 const CaseStudio = () => {
   return (

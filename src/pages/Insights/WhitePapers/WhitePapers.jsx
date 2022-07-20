@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './WhitePapers.modules.scss';
+import styles from './WhitePapers.module.scss';
 
 const WhitePapers = () => {
   return (

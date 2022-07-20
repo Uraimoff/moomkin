@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './ExpertiseVsIndustries.modules.scss';
+import styles from './ExpertiseVsIndustries.module.scss';
 
 
 const ExpertiseVsIndustries = () => {

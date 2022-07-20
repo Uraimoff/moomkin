@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './MobileApps.modules.scss';
+import styles from './MobileApps.module.scss';
 
 const MobileApps = () => {
   return (

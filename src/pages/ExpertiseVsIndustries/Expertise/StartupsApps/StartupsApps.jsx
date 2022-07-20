@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './StartupsApps.modules.scss';
+import styles from './StartupsApps.module.scss';
 
 const StartupsApps = () => {
   return (

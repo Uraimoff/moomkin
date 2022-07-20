@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './SaasDevelopment.modules.scss';
+import styles from './SaasDevelopment.module.scss';
 
 const SaasDevelopment = () => {
   return (

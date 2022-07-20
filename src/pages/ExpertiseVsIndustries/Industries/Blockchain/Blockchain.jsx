@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Blockchain.modules.scss';
+import styles from './Blockchain.module.scss';
 
 const Blockchain = () => {
   return (
