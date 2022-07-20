@@ -42,7 +42,9 @@ const expertise = [
             <li style={{ fontSize: "14px", color: "gray", cursor: "auto" }}>
               EXPERTISE
             </li>
-            <li>Enterprise Apps</li>
+            <Link to="/solutions/enterprise-software-development">
+              <li>Enterprise Apps</li>
+            </Link>
             <li>Startups Apps</li>
             <li>Internet of Things</li>
             <li>Mobile Apps</li>
@@ -54,7 +56,9 @@ const expertise = [
             <li style={{ fontSize: "14px", color: "gray", cursor: "auto" }}>
               INDUSTRIES
             </li>
+            <Link to="/industries/advertising-and-marketing-automation-development">
             <li>AdTech & Marketing</li>
+            </Link>
             <li>EdTech & eLearning</li>
             <li>eCommerce</li>
             <li>Logistics & Transportation</li>
@@ -115,7 +119,7 @@ const insights = [
 export const data = [
   {
     menu: (
-      <Menu style={{ padding: "20px 0",marginTop:"10px",}}>
+      <Menu style={{ padding: "20px 0", marginTop: "10px" }}>
         {services.map((a) => (
           <MenuItem style={{ fontSize: "16px", padding: "10px 20px" }}>
             <Link to={a.link}>{a.label}</Link>
@@ -125,17 +129,17 @@ export const data = [
     ),
     title: "SERVICES",
     link: "/services",
-    icon: <DownOutlined />
+    icon: <DownOutlined />,
   },
   {
-    menu: <Menu items={[...expertise]} style={{marginTop:"10px"}} />,
+    menu: <Menu items={[...expertise]} style={{ marginTop: "10px" }} />,
     title: "EXPERTISE & INDUSTRIES",
     link: "",
-    icon: <DownOutlined />
+    icon: <DownOutlined />,
   },
   {
     menu: (
-      <Menu style={{ padding: "20px 0",marginTop:"10px", }}>
+      <Menu style={{ padding: "20px 0", marginTop: "10px" }}>
         {clients.map((a) => (
           <MenuItem style={{ fontSize: "16px", padding: "10px 20px" }}>
             {a.label}
@@ -145,11 +149,11 @@ export const data = [
     ),
     title: "CLIENTS",
     link: "",
-    icon: <DownOutlined />
+    icon: <DownOutlined />,
   },
   {
     menu: (
-      <Menu style={{ padding: "20px 0",marginTop:"10px", }}>
+      <Menu style={{ padding: "20px 0", marginTop: "10px" }}>
         {about.map((a) => (
           <MenuItem style={{ fontSize: "16px", padding: "10px 20px" }}>
             {a.label}
@@ -159,12 +163,12 @@ export const data = [
     ),
     title: "ABOUT US",
     link: "/about",
-    icon: <DownOutlined />
+    icon: <DownOutlined />,
   },
   { menu: "", title: "CONTACTS", link: "" },
   {
     menu: (
-      <Menu style={{ padding: "20px 0",marginTop:"10px", }}>
+      <Menu style={{ padding: "20px 0", marginTop: "10px" }}>
         {insights.map((a) => (
           <MenuItem style={{ fontSize: "16px", padding: "10px 20px" }}>
             {a.label}
@@ -174,6 +178,6 @@ export const data = [
     ),
     title: "INSIGHTS",
     link: "",
-    icon: <DownOutlined />
+    icon: <DownOutlined />,
   },
 ];
