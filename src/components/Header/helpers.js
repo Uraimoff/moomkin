@@ -9,19 +9,19 @@ const services = [
     label: "Business Analysis",
   },
   {
-    link: "",
+    link: "/services/ui-ux-design",
     label: "UI/UX Desing",
   },
   {
-    link: "",
+    link: "/services/web-frontend-and-backend-development",
     label: "Frontend & Backend Development",
   },
   {
-    link: "",
+    link: "/services/quality-assurance",
     label: "QA and Testing",
   },
   {
-    link: "",
+    link: "/services/it-staff-augmentation",
     label: "IT Staff Augmentation",
   },
 ];
@@ -158,7 +158,7 @@ export const data = [
       </Menu>
     ),
     title: "ABOUT US",
-    link: "",
+    link: "/about",
     icon: <DownOutlined />
   },
   { menu: "", title: "CONTACTS", link: "" },
